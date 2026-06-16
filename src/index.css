@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Outfit:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Plus Jakarta Sans", "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Outfit", sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+
+  --color-dark-deep: #080808;
+  --color-dark-graphite: #141414;
+  --color-dark-gray: #222222;
+  --color-light-white: #F2F2F2;
+  --color-text-muted: #A8A8A8;
+  --color-red-dark: #9E1B32;
+  --color-red-live: #D1273F;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px;
+    background-color: #080808;
+    color: #F2F2F2;
+    font-family: var(--font-sans);
+  }
+
+  body {
+    overflow-x: hidden;
+  }
+
+  /* Custom Selection colors using the cinematic red theme */
+  ::selection {
+    background-color: #9E1B32;
+    color: #F2F2F2;
+  }
+
+  /* Elegant thin custom scrollbar to match the high-end feel */
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #080808;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #222222;
+    border-radius: 3px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #9E1B32;
+  }
+}
+
+/* Subtle cinematic noise overlay style */
+.film-grain {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  content: "";
+  opacity: 0.015;
+  pointer-events: none;
+  z-index: 9999;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+}
+
+/* Custom shadow to give elements a premium glowing depth */
+.glow-sm {
+  box-shadow: 0 4px 20px -2px rgba(158, 27, 50, 0.08);
+}
+.glow-md {
+  box-shadow: 0 8px 30px -4px rgba(158, 27, 50, 0.12);
+}
+.glow-red {
+  box-shadow: 0 0 25px -5px rgba(158, 27, 50, 0.3);
+}
+
+/* Timeline marker line gradient */
+.timeline-line {
+  background: linear-gradient(to bottom, #9E1B32, #222222);
+}
+
+/* Red-soft glow accent overlay */
+.radial-glow {
+  background: radial-gradient(circle at 50% 50%, rgba(158, 27, 50, 0.12) 0%, rgba(8, 8, 8, 0) 70%);
+}
+.radial-glow-corner {
+  background: radial-gradient(circle at top right, rgba(158, 27, 50, 0.08) 0%, rgba(8, 8, 8, 0) 60%);
+}
+
