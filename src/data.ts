@@ -286,5 +286,25 @@ export const PROJECTS_DATA: ProjetctItem[] = [
     ],
     liveUrl: 'https://drweslleyvet.netlify.app/',
     status: 'Completo'
+  },
+  {
+    id: 'case-personal',
+    classNameLabel: 'ARQUIVO DE PROJETO • CASE 05',
+    title: 'Beto Personal',
+    category: 'Landing Pages',
+    summary: 'Landing page esportiva e de altíssima performance desenvolvida para consultoria online e treinos de alta performance com foco em captação de alunos.',
+    coverImage: 'https://api.microlink.io/?url=https%3A%2F%2Fbeto-personal.vercel.app%2F&screenshot=true&embed=screenshot.url',
+    backupImage: 'https://images.unsplash.com/photo-1517838277536-f5f99be501cd?auto=format&fit=crop&q=80&w=800',
+    technologies: ['React', 'Vite', 'Tailwind CSS', 'Motion', 'Vercel'],
+    problemDescription: 'O treinador necessitava de uma presença web moderna, agressiva e extremamente rápida no mobile para divulgar seu programa de consultoria fitness presencial e online, estruturar planos e aumentar as inscrições de novos alunos.',
+    solutionDescription: 'Desenvolvimento de uma landing page esportiva fardada com alto apelo estético focado em resultados rápidos. Contém menus simplificados de serviços, benefícios de treinos personalizados, blocos de pacotes promocionais com chamadas objetivas e botões de agendamento automático integrados no WhatsApp.',
+    keyFeatures: [
+      'Visual ousado de alta energia com contraste calibrado para o segmento fitness',
+      'Estrutura com benefícios claros do método e da consultoria personalizada',
+      'Sessões de preços e planos promocionais estruturadas com gatilhos de conversão',
+      'Carregamento instantâneo mobile-first desenvolvido para cliques eficientes no Instagram'
+    ],
+    liveUrl: 'https://beto-personal.vercel.app/',
+    status: 'Completo'
   }
 ];
